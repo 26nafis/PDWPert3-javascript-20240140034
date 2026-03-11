@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("gunung fuji.avif");
+  background-size:cover;
+  background-position:center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.login-box {
+  background: rgba(0, 0, 0, 0.5); /* hitam transparan */
+  padding: 40px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white; /* agar teks terlihat */
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  
+}
+
+.clock {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fffbfb;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #999;
+  outline: none;
+}
+
+.input-box label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  color: #09080b;
+  transition: 0.3s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+  top: -12px;
+  font-size: 12px;
+  color: #4f08ca;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #1d2671;
+  color: rgb(243, 242, 242);
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #4d06c0;
+}
+
+* Container pembungkus input */
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff; /* Memberikan garis bawah sebagai pembatas */
+}
+
+/* Bagian input yang dibuat bening */
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent; /* Kunci utama agar background foto terlihat */
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #fff; /* Warna teks saat mengetik agar kontras dengan bg gelap */
+  padding: 0 35px 0 5px;
+}
+
+/* Mengatur posisi label agar berada di dalam area input */
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 16px;
+  pointer-events: none; /* Agar label tidak menghalangi klik pada input */
+  transition: .5s;
+}
+
+button:hover {
+  background: #37c35f;
+}
